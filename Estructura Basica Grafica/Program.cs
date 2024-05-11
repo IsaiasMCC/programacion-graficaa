@@ -4,19 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Estructura_Basica_Grafica.presentacion;
 namespace Estructura_Basica_Grafica
 {
     static class Program
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
+       
         [STAThread]
         static void Main()
         {
+            //Game game = new Game(900, 700, "Basic Structure");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Presentation());
         }
     }
 }
